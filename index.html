@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+    <title>Javascript TODO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo Web app</h1>
+        <form class= "todo-form" action="">
+            <input class="task-form" type="text" placeholder="Create your task here">
+            <button class="task-form-submit">
+                <span>BUTTON</span>
+            </button>
+        </form>
+        <section>
+            <div class="todo">
+                <h2>Todo List</h2>
+                <div class="todo-list">
+                    <div class="todo-item">
+                        <div class="content">
+                            <input type="text" value="create todo here" readonly>
+                        </div>
+                        <input type="button" id="edit" value="edit">
+                        <input type="button" id="delete" value="delete">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
