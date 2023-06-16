@@ -1,9 +1,60 @@
 *{
     font-family: montserrat;
     box-sizing: border-box;
-    background-color: #353F5B;
     color: #fff;
 }
+.container{
+    background-color: #353F5B;
+}
+/* submit button styling  */
+.btn {
+    width: 140px;
+    height: 50px;
+    background: linear-gradient(to top, #00154c, #12376e, #23487f);
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  .btn span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+  }
+  
+  .btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .btn:hover .btn-text-one {
+    top: -100%;
+  }
+  
+  .btn:hover .btn-text-two {
+    top: 50%;
+  }
+  
+
+
+/* here starts the form styling  */
 h1{
     text-align: center;
 }
@@ -17,8 +68,10 @@ h1{
 .task-form{
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 1px 1px 10px rgb(0, 0, 0);
-    flex: 1 1 0%;
+    width: 20rem;
+    background-color: #000000;
+    border-color:  #8179c7;
+    border-width: 2px;
 }
 .form-box{
     display: flex;
@@ -30,6 +83,34 @@ section{
     display: flex;
     justify-content: center;
 }
+/* styling of todo section  */
+
 .todo-item{
     display: flex;
+
+}
+.create-todo{
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 20rem;
+    background-color: #000000;
+    border-color: #8179c7;
+    border-width: 2px;
+
+}
+/* BUTTON STYLING  */
+.todo-item{
+    
+}
+#edit{
+    border-radius: 1rem;
+    width: 5rem;
+    border: none;
+    cursor: pointer;
+}
+#delete{
+    border-radius: 1rem;
+    width: 5rem;
+    border: none;
+    cursor: pointer;
 }
