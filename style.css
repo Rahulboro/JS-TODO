@@ -70,7 +70,9 @@ h1{
     border-radius: 1rem;
     width: 20rem;
     background-color: #000000;
-    border-color:  #8179c7;
+    border: none;
+    border-bottom: 2px solid #8179c7;
+
     border-width: 2px;
 }
 .form-box{
@@ -94,8 +96,8 @@ section{
     border-radius: 1rem;
     width: 20rem;
     background-color: #000000;
-    border-color: #8179c7;
-    border-width: 2px;
+    border: none;
+    border-bottom: 2px solid #8179c7;
 
 }
 /* BUTTON STYLING  */
