@@ -16,6 +16,9 @@ window.addEventListener('DOMContentLoaded',() =>{
         const todo_el = document.createElement('div')
         todo_el.classList.add('todo')
         const todo_content = document.createElement('div')
+        todo_content.classList.add('todo-list')
+
+        todo_el.appendChild(todo_content);
         
 
     })

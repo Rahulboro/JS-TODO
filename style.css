@@ -63,6 +63,7 @@ h1{
     text-align: center;
 }
 .todo-form{
+  gap: 1em;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -90,10 +91,9 @@ section{
     justify-content: center;
 }
 /* styling of todo section  */
-
-.todo-item{
-    display: flex;
-
+.todo-list{
+  display: flex;
+  gap: 1em;
 }
 .create-todo{
     padding: 1rem;
@@ -104,22 +104,7 @@ section{
     border-bottom: 2px solid #8179c7;
 
 }
-/* BUTTON STYLING  */
-.todo-item{
-    
-}
-#edit{
-    border-radius: 1rem;
-    width: 5rem;
-    border: none;
-    cursor: pointer;
-}
-#delete{
-    border-radius: 1rem;
-    width: 5rem;
-    border: none;
-    cursor: pointer;
-}
+
 /* edit button styling  */
 .edit-btn {
   position: relative;
