@@ -1,19 +1,35 @@
 *{
     font-family: montserrat;
     box-sizing: border-box;
-    height: 10vh;
-    background-color:#242B2E;
+    background-color: #353F5B;
     color: #fff;
 }
 h1{
     text-align: center;
 }
 .todo-form{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+    justify-content: space-between;
+}
+.task-form{
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+    flex: 1 1 0%;
+}
+.form-box{
     display: flex;
     justify-content: center;
 }
 section{
-    background-color: #81b821;
+    text-align: center;
+    height: 600px;
     display: flex;
     justify-content: center;
+}
+.todo-item{
+    display: flex;
 }

@@ -13,19 +13,21 @@
 <body>
     <div class="container">
         <h1>Todo Web app</h1>
-        <form class= "todo-form" action="">
-            <input class="task-form" type="text" placeholder="Create your task here">
-            <button class="task-form-submit">
-                <span>BUTTON</span>
-            </button>
-        </form>
+        <div class="form-box">
+            <form class= "todo-form" action="">
+                <input class="task-form" type="text" placeholder="Create your task here">
+                <button class="task-form-submit">
+                    <span>BUTTON</span>
+                </button>
+            </form>
+        </div>
         <section>
             <div class="todo">
                 <h2>Todo List</h2>
                 <div class="todo-list">
                     <div class="todo-item">
                         <div class="content">
-                            <input type="text" value="create todo here" readonly>
+                            <input type="text" placeholder="create todo here">
                         </div>
                         <input type="button" id="edit" value="edit">
                         <input type="button" id="delete" value="delete">
