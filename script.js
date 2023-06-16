@@ -1,9 +1,9 @@
 window.addEventListener('DOMContentLoaded',() =>{
-    const form = document.querySelector('.todo-form');
-    const input = document.querySelector('.task-form');
-    const list_todo = document.querySelector('.todo-list');
+    const form_box = document.querySelector('.todo-form');
+    const input = document.querySelector('.form');
+    const todo_li = document.querySelector('.todo-list');
 
-    form.addEventListener('submit', (p) =>{
+    form_box.addEventListener('submit', (p) =>{
         p.preventDefault();
 
         const todo = input.value;
@@ -14,12 +14,11 @@ window.addEventListener('DOMContentLoaded',() =>{
         } 
 
         const todo_el = document.createElement('div')
-        todo_el.classList.add('todo')
-        const todo_content = document.createElement('div')
-        todo_content.classList.add('todo-list')
+        todo_el.classList.add('content')
 
-        todo_el.appendChild(todo_content);
-        
+        const content_input = document.createElement('input');
+        content_input.type = 'text';
+        content_input.classList.add('create-todo')
 
     })
 
