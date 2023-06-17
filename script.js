@@ -26,7 +26,14 @@ window.addEventListener('DOMContentLoaded',() =>{
 
         // appended the child of the CONTENT 
         todo_el.appendChild(content_input);
+        // create the button element 
+        const btn_action = document.createElement('button')
+        btn.action.classList.add('edit-btn')
+        btn_action.type = 'button'
+        btn_action.innerText = "Edit"
         
+        todo_list.appendChild(btn_action);
+
 
     })
 
