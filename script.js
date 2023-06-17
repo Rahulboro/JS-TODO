@@ -13,13 +13,21 @@ window.addEventListener('DOMContentLoaded',() =>{
             return;
         } 
 
+        // here we have created the CONTENT div 
         const todo_el = document.createElement('div')
         todo_el.classList.add('content')
 
+        // here we have created the child CONTENT of the div 
         const content_input = document.createElement('input');
         content_input.type = 'text';
         content_input.classList.add('create-todo');
-        content_input.setAttribute()
+        content_input.placeholder = 'todos';
+        content_input.setAttribute('readonly', 'readonly');
+
+        // appended the child of the CONTENT 
+        todo_el.appendChild(content_input);
+        
+
     })
 
 })
