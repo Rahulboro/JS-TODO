@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded',() =>{
+window.addEventListener('load',() =>{
     const form_box = document.querySelector('.todo-form');
     const input = document.querySelector('.form');
     const todo_li = document.querySelector('.todo-list');
