@@ -56,7 +56,13 @@ window.addEventListener('load',() =>{
                 btn_edit_action.innerText ='edit'
                 content_input.setAttribute('readonly','readonly');
             }
-        })
+        });
+        btn_dlt_action.addEventListener('click',(e) => {
+            todo_li.remove(content)
+            todo_li.remove(content_input)
+            todo_li.remove(btn_edit_action)
+            todo_li.remove(btn_dlt_action)
+        });
     })
 
 })
