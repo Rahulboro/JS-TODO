@@ -18,8 +18,8 @@ window.addEventListener('DOMContentLoaded',() =>{
 
         const content_input = document.createElement('input');
         content_input.type = 'text';
-        content_input.classList.add('create-todo')
-
+        content_input.classList.add('create-todo');
+        content_input.setAttribute()
     })
 
 })
