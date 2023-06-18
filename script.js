@@ -3,8 +3,8 @@ window.addEventListener('load',() =>{
     const input = document.querySelector('.form');
     const todo_li = document.querySelector('.todo-list');
 
-    form_box.addEventListener('submit', (p) =>{
-        p.preventDefault();
+    form_box.addEventListener('submit', (e) =>{
+        e.preventDefault();
 
         const todo = input.value;
 
@@ -15,8 +15,12 @@ window.addEventListener('load',() =>{
 
         // here we have created the CONTENT div 
         const todo_el = document.createElement('div')
-        todo_el.classList.add('content')
+        todo_el.classList.add('content-list')
         todo_li.appendChild(todo_el)
+
+        // here we have created the div of the content 
+        const content_div = document.createElement('div');
+        content_div.classList.add('content');
 
         // here we have created the child CONTENT of the div 
         const content_input = document.createElement('input');
@@ -26,14 +30,15 @@ window.addEventListener('load',() =>{
         content_input.setAttribute('readonly', 'readonly');
 
         // appended the child of the CONTENT 
-        todo_el.appendChild(content_input);
+        content_div.appendChild(content_input);
+
         // create the edit button element 
         const btn_edit_action = document.createElement('button')
         btn_edit_action.classList.add('edit-btn')
         btn_edit_action.type = 'button'
         btn_edit_action.innerText = "Edit"
         
-        todo_li.appendChild(btn_edit_action);
+        content_div.appendChild(btn_edit_action);
         // create the delete button 
         const btn_dlt_action = document.createElement('button')
         btn_dlt_action.classList.add('delete')
@@ -41,12 +46,12 @@ window.addEventListener('load',() =>{
         btn_dlt_action.type = 'button';
         //  append child edit and delete button 
 
-        todo_li.appendChild(btn_edit_action);
-        todo_li.appendChild(btn_dlt_action);
+        content_div.appendChild(btn_edit_action);
+        content_div.appendChild(btn_dlt_action);
         
         input.value = '';
 
-        btn_edit_action.addEventListener = ('click',(p) =>{
+        btn_edit_action.addEventListener = ('click',(e) =>{
             if (btn_edit_action.innerText.toLowerCase()== 'edit'){
                 btn_edit_action.innerText = "save"
                 content_input.removeAttribute('readonly')

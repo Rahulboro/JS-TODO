@@ -92,6 +92,9 @@ section{
 }
 /* styling of todo section  */
 .todo-list{
+  gap: 1em;
+}
+.content-list{
   display: flex;
   gap: 1em;
 }
@@ -109,6 +112,7 @@ section{
 .edit-btn {
   position: relative;
   font-size: 13px;
+  position: relative;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1em 2.5em;
