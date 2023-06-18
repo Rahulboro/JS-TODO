@@ -7,7 +7,7 @@ window.addEventListener('load',() =>{
         e.preventDefault();
 
         const todo = input.value;
-
+        
         if (!todo) {
             alert("please fill out the todo");
             return;
@@ -46,7 +46,6 @@ window.addEventListener('load',() =>{
         btn_dlt_action.type = 'button';
         //  append child edit and delete button 
 
-        content_div.appendChild(btn_edit_action);
         content_div.appendChild(btn_dlt_action);
         
         input.value = '';
@@ -55,7 +54,7 @@ window.addEventListener('load',() =>{
             if (btn_edit_action.innerText.toLowerCase()== 'edit'){
                 btn_edit_action.innerText = "save"
                 content_input.removeAttribute('readonly')
-                content_input.focus();
+                content_input.focus();  
             }
             else {
                 btn_edit_action.innerText ='edit'
@@ -63,11 +62,8 @@ window.addEventListener('load',() =>{
             }
         });
         btn_dlt_action.addEventListener('click',(e) => {
-            todo_li.remove(content)
-            todo_li.remove(content_input)
-            todo_li.remove(btn_edit_action)
-            todo_li.remove(btn_dlt_action)
+            todo_li.remove(content_div);
         });
-    })
+    });
 
 })
