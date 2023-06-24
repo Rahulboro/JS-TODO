@@ -126,7 +126,7 @@ section{
   background-color: #8179c7;
  }
  
- .edit-btn:hover {
+ .edit-btn:hover {b
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
  }
