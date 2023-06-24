@@ -21,6 +21,8 @@ window.addEventListener('load',() =>{
         // here we have created the div of the content 
         const content_div = document.createElement('div');
         content_div.classList.add('content');
+        todo_el.appendChild(content_div);
+
 
         // here we have created the child CONTENT of the div 
         const content_input = document.createElement('input');
