@@ -96,10 +96,11 @@ section{
 }
 .content-list{
   display: flex;
-  gap: 1em;
+  gap: 10em;
 }
 .create-todo{
     padding: 1rem;
+    margin: 1.2rem;
     border-radius: 1rem;
     width: 20rem;
     background-color: #000000;
@@ -126,9 +127,9 @@ section{
   background-color: #8179c7;
  }
  
- .edit-btn:hover {b
+ .edit-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
  }
  
  .edit-btn:active {
