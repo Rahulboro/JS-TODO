@@ -53,7 +53,7 @@ window.addEventListener('load',() =>{
         input.value = '';
 
         btn_edit_action.addEventListener = ('click',(e) =>{
-            if (btn_edit_action.innerText.toLowerCase()== 'edit'){
+            if (btn_edit_action.innerText.toLowerCase() == 'edit'){
                 btn_edit_action.innerText = "save"
                 content_input.removeAttribute('readonly')
                 content_input.focus();  
